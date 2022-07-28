@@ -1,0 +1,91 @@
+.excellence
+  margin-top: 80px
+  margin-bottom: 80px
+
+.excellence__description
+  display: flex
+
+.excellence__img
+  height: 150px
+  background-image: url(../img/excellence/pipe.png)
+  background-repeat: no-repeat
+  background-position: 0 0
+
+.excellence__h2
+  font-size: 2.5rem
+  font-weight: 700
+  line-height: 40px
+  color: $text-exellence
+
+.excellence__item
+  display: grid
+  grid-template-columns: 80px auto
+  grid-column-gap: 30px
+  align-items: center
+
+.excellence__icon
+  width: 80px
+  height: 80px
+  background-repeat: no-repeat
+  background-position: 0 0
+
+.excellence__icon-eye
+  background-image: url(../img/excellence/eye-circle.svg)
+
+.excellence__icon-fingers
+  background-image: url(../img/excellence/fingers.svg)
+
+.excellence__icon-megafon
+  background-image: url(../img/excellence/megafon.svg)
+
+.excellence__p
+  font-size: 1rem
+  line-height: 19px
+
+.excellence__p-bold
+  font-weight: 700
+
+@media (min-width: 992px)
+  .excellence__img
+    background-image: url(../img/excellence/pipe.png)
+  .excellence__h2
+    max-width: 380px
+  .excellence__item
+    display: flex
+    flex-direction: row
+  .excellence__icon
+    width: 80px
+
+@media (min-width: 768px) and (max-width: 991px)
+  .excellence__img
+    background-image: url(../img/excellence/pipe_690.png)
+    width: 211px
+    height: 187px
+    background-size: contain
+  .excellence__item
+    display: inline-block
+  .excellence__icon
+    margin-bottom: 15px
+
+@media (min-width: 576px) and (max-width: 767px)
+  .excellence__img
+    width: 150px
+    height: 134px
+    background-size: contain
+  .excellence__text
+    padding-left: 30px
+  .excellence__h2
+    font-size: 2.5rem
+  .excellence__item
+    display: inline-block
+  .excellence__icon
+    margin-bottom: 15px
+
+@media (min-width: 320px) and (max-width: 575px)
+  .excellence__img
+    display: none
+  .excellence__h2
+    font-size: 1.25rem
+    line-height: 130%
+  .excellence__item:not(:last-child)
+    margin-bottom: 30px

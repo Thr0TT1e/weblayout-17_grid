@@ -1,0 +1,66 @@
+.header
+  background-color: $accent
+  color: $text-header
+  .container
+    height: 100%
+    .row
+      height: 100%
+
+.header__logo
+  padding-top: 30px
+  padding-bottom: 30px
+
+.header__menu
+  align-self: center
+
+.nav__burger
+  display: none
+
+@media (min-width: 768px)
+  .header
+    height: 80px
+  .header__menu .nav
+    justify-content: flex-end
+
+@media (min-width: 576px) and (max-width: 767px)
+  .header
+    height: 133px
+  .header__logo
+    text-align: center
+  .header__menu
+    display: grid
+    justify-content: center
+    padding-top: 0
+    padding-bottom: 30px
+  .nav-link
+    padding-top: 0
+    padding-bottom: 0
+
+@media (min-width: 320px) and (max-width: 575px)
+  .header__menu
+    display: flex
+    justify-content: flex-end
+    align-self: center
+    .nav
+      display: none
+  .nav__burger
+    display: block
+    width: 30px
+    height: 30px
+    margin: 0
+    background-image: url(../img/header/burger.svg)
+    background-repeat: no-repeat
+    background-position: 100%
+
+.header__link
+  font-size: 18px
+  line-height: 21.09px
+  text-decoration: none
+  color: $text-header
+
+.header__active
+  font-weight: bold
+  color: $text-header
+
+.nav-link:hover
+  color: $text-header

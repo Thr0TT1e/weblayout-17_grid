@@ -1,0 +1,59 @@
+.hero
+  height: 620px
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%)
+  color: $text-header
+  .container
+    height: 100%
+    .row
+      height: 100%
+
+.hero__text
+  margin-top: 130px
+
+.hero__h1
+  margin-bottom: 30px
+  font-size: 3.75rem
+  font-weight: 700
+  line-height: 100%
+
+.hero__description
+  margin-bottom: 70px
+  font-size: 1.125rem
+  font-weight: 400
+  line-height: 27px
+
+@media (min-width: 992px)
+  .hero__bg
+    background-image: url(../img/hero/big.png)
+    background-repeat: no-repeat
+    background-position: 100% 15px
+
+@media (min-width: 768px) and (max-width: 991px)
+  .hero__bg
+    background-image: url(../img/hero/big_690.png)
+    background-repeat: no-repeat
+    background-position: 100% 130px
+
+@media (min-width: 576px) and (max-width: 767px)
+  .hero
+    height: 567px
+  .hero__text
+    margin-top: 77px
+  .hero__h1
+    font-size: 3.125rem
+  .hero__img
+    display: none
+
+@media (min-width: 320px) and (max-width: 575px)
+  .hero
+    height: 353px
+  .hero__text
+    margin-top: 50px
+  .hero__h1
+    margin-bottom: 15px
+    font-size: 1.875rem
+    line-height: 100%
+  .hero__description
+    margin-bottom: 50px
+    font-size: 1rem
+    line-height: 130%
